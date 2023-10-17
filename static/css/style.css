@@ -1,44 +1,98 @@
 * {
   box-sizing: border-box !important;
+  font-family: 'Montserrat', sans-serif;
 }
 
 body {
-    margin-top: 82px;
+  margin-top: 82px;
 }
 
 header {
-    position: fixed;
-    width: 100%;
-    top: 0;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  background-color: #fff;
+  z-index: 1;
 }
 
-.flex-center-between-carousel {
-  display: flex;
+main {
   width: 100%;
-  justify-content: space-between;
+  display: flex;
+  flex-direction: column;
   align-items: center;
 }
 
+.box-content {
+  background-color: #c3151b;
+  width: 100%;
+  padding: 2rem;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.text-transform-container {
+  width: 40%;
+  text-align: center;
+}
+
+
 .carousel {
-    position: fixed;
-    width: 100%;
-    height: calc(100vh - 82px);
-    overflow: hidden;
-    z-index: -1;
+  width: 60%;
+}
+
+h1 {
+  font-size: 3rem;
 }
 
 .carousel img {
-    max-height: 100%;
-    max-width: 100%;
-    display: block;
+  border-radius: 8px;
+}
+
+.about {
+  margin: 1rem 0;
+  padding: 2rem;
+}
+
+.title-about {
+  color: #c3151b;
+  text-align: center;
+}
+
+.chats {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 10px;
+  right: 20px;
+}
+
+.chats a {
+  margin: 0.5rem 0;
+}
+
+.icon-chat {
+  width: 50px;
 }
 
 @media (max-width: 991px) {
-    .flex-center-between-carousel  {
-        align-items: flex-start;
+    .box-content {
+        flex-direction: column;
+    }
+
+    .text-transform-container {
+        width: 100%;
     }
 
     .carousel {
-        height: auto;
+        width: 100%;
+        margin-top: 1rem;
+    }
+
+    h1 {
+      font-size: 2rem;
     }
 }
