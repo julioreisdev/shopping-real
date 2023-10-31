@@ -1,6 +1,28 @@
+::-webkit-scrollbar {
+  width: 8px;
+  background-color: #fff;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #c3151b;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #ff0000;
+}
+
+::-webkit-scrollbar-track {
+  background: #fff;
+}
+
+::-webkit-scrollbar-corner {
+  background: #fff;
+}
+
 * {
   box-sizing: border-box !important;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 body {
@@ -37,7 +59,6 @@ main {
   text-align: center;
 }
 
-
 .carousel {
   width: 60%;
 }
@@ -53,11 +74,26 @@ h1 {
 .about {
   margin: 1rem 0;
   padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .title-about {
   color: #c3151b;
   text-align: center;
+}
+
+.description-about {
+  color: #c3151b;
+  text-align: justify;
+  font-size: 1.2rem;
+}
+
+.map-about {
+  border-radius: 8px;
+  width: 100%;
+  margin-top: 1rem;
 }
 
 .chats {
@@ -75,24 +111,75 @@ h1 {
 }
 
 .icon-chat {
-  width: 50px;
+  width: 45px;
+}
+
+.instagram {
+  width: 35px !important;
+}
+
+.footer {
+  padding: 2rem;
+  background-color: #c3151b;
+  color: #fff;
+  padding: 1rem;
+
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.footer img {
+  width: 200px;
+  margin-bottom: 1rem;
+}
+
+
+
+.footer-info {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.formal-info,
+.address-info,
+.contact-info {
+  align-items: self-start;
+}
+
+@media (max-width: 500px) {
+  .footer img {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
 }
 
 @media (max-width: 991px) {
-    .box-content {
-        flex-direction: column;
-    }
+  .box-content {
+    flex-direction: column;
+  }
 
-    .text-transform-container {
-        width: 100%;
-    }
+  .footer-info {
+    display: block;
+    text-align: center;
+  }
 
-    .carousel {
-        width: 100%;
-        margin-top: 1rem;
-    }
+  .text-transform-container {
+    width: 100%;
+  }
 
-    h1 {
-      font-size: 2rem;
-    }
+  .carousel {
+    width: 100%;
+    margin-top: 1rem;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
 }
