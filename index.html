@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shopping Real</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon" />
+  </head>
+  <body onload="wordAlter()">
+    <header>
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"
+            ><img src="logotipo.png" width="180px" alt=""
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarText"
+            aria-controls="navbarText"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarText">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about">Quem somos</a>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  target="_blank"
+                  href="https://docs.google.com/forms/d/e/1FAIpQLSfBSa6cIISAIsNvGVbg5RUeyad-KYMYY3Y4Rlku1vxkVmtCwA/viewform"
+                  >Trabalhe conosco</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="gallery.html">Galeria</a>
+              </li>
+              <div class="list-contacts">
+                <li class="nav-item">
+                  <a
+                    href="https://wa.me/5589988023202?text=Olá, estou entrando em contato através do *site* do Shopping Real!"
+                    target="_blank"
+                  >
+                    <div
+                      style="
+                        display: flex;
+                        align-items: center;
+                        cursor: pointer;
+                      "
+                    >
+                      <p
+                        style="
+                          margin: 0 0.5rem 0 0;
+                          background-color: #fff;
+                          padding: 0.2rem 0.5rem;
+                          border-radius: 5px;
+                          font-weight: bold;
+                          font-size: 0.8rem;
+                        "
+                      >
+                        WhatsApp
+                      </p>
+                      <img
+                        style="cursor: pointer"
+                        src="https://icons.iconarchive.com/icons/dtafalonso/android-l/256/WhatsApp-icon.png"
+                        alt=""
+                        class="icon-chat"
+                      />
+                    </div>
+                  </a>
+                </li>
+
+                <li class="nav-item">
+                  <a
+                    href="https://www.instagram.com/shopping_real/"
+                    target="_blank"
+                  >
+                    <div
+                      style="
+                        display: flex;
+                        align-items: center;
+                        cursor: pointer;
+                      "
+                    >
+                      <p
+                        style="
+                          margin: 0 0.5rem 0 0;
+                          background-color: #fff;
+                          padding: 0.2rem 0.5rem;
+                          border-radius: 5px;
+                          font-weight: bold;
+                          font-size: 0.8rem;
+                        "
+                      >
+                        Instagram
+                      </p>
+                      <img
+                        style="cursor: pointer"
+                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Instagram-Icon.png/1024px-Instagram-Icon.png"
+                        alt=""
+                        class="icon-chat instagram"
+                      />
+                    </div>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a
+                    href="https://www.facebook.com/ShoppingRealSRN"
+                    target="_blank"
+                  >
+                    <div
+                      style="
+                        display: flex;
+                        align-items: center;
+                        cursor: pointer;
+                      "
+                    >
+                      <p
+                        style="
+                          margin: 0 0.5rem 0 0.5rem;
+                          background-color: #fff;
+                          padding: 0.2rem 0.5rem;
+                          border-radius: 5px;
+                          font-weight: bold;
+                          font-size: 0.8rem;
+                        "
+                      >
+                        Facebook
+                      </p>
+                      <img
+                        style="cursor: pointer"
+                        src="https://icons.iconarchive.com/icons/yootheme/social-bookmark/128/social-facebook-box-blue-icon.png"
+                        alt=""
+                        class="icon-chat facebook"
+                      />
+                    </div>
+                  </a>
+                </li>
+              </div>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div class="box-content">
+        <div class="text-transform-container">
+          <h1>
+            Aqui você encontra o melhor em
+            <span class="word-alter">eletrodomésticos</span>
+          </h1>
+        </div>
+        <div
+          id="carouselExampleAutoplaying"
+          class="carousel slide"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="eletrodomesticos.jpg" class="d-block w-100" alt="..." />
+            </div>
+            <div class="carousel-item">
+              <img src="eletrodomesticos.jpg" class="d-block w-100" alt="..." />
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleAutoplaying"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleAutoplaying"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+      <div id="about" class="about">
+        <h1 class="title-about">Quem somos?</h1>
+        <p class="description-about">
+          O Shopping Real é uma loja de departamentos localizada em São Raimundo
+          Nonato no Piauí e atua nos ramos de móveis, eletroeletrônicos,
+          telefonia celular, material de construção, confecções e peças e pneus
+          para motos. Possuindo uma área superior a 1 mil metros quadrados de
+          vendas localizada no centro da cidade, é um ponto de referência
+          regional, tendo em vista os seus mais de 20 anos de instalações atuais
+          e mais de 45 anos de história. Contando com crediário próprio e outras
+          formas de pagamento, aliado a linhas de produtos de excelente
+          qualidade e procedência, além de um atendimento ímpar, o Shopping Real
+          atende toda a microrregião, conquistando mais e mais clientes todos os
+          dias.
+        </p>
+
+        <p class="description-about">
+          Venha você também fazer parte da nossa história!
+        </p>
+
+        <a style="text-decoration: none" href="gallery.html">
+          <button
+            style="margin: 2rem 0; display: flex; align-items: center"
+            class="btn btn-light"
+            type="button"
+          >
+            <h4 style="margin: 0; color: #c3151b">
+              Veja nossa galeria de fotos
+            </h4>
+            <img
+              style="margin-left: 1rem; width: 40px"
+              src="https://icons.iconarchive.com/icons/sinisa91g/supernova/72/Gallery-icon.png"
+              alt=""
+            />
+          </button>
+        </a>
+
+        <iframe
+          class="map-about"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3940.5263258460773!2d-42.6930823241391!3d-9.015657491045141!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x77a04be8795bd39%3A0x7806bc9daf6a9a8!2sShopping%20Real!5e0!3m2!1spt-BR!2sbr!4v1698766584403!5m2!1spt-BR!2sbr"
+          width="600"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+
+      <div class="chats">
+        <div style="display: flex; align-items: center; cursor: pointer">
+          <p
+            style="
+              margin: 0 0.5rem 0 0;
+              background-color: #fff;
+              padding: 0.2rem 0.5rem;
+              border-radius: 5px;
+              font-weight: bold;
+              font-size: 0.8rem;
+            "
+          >
+            Fale conosco!
+          </p>
+          <img
+            style="cursor: pointer"
+            src="https://icons.iconarchive.com/icons/martz90/circle/256/facebook-messenger-icon.png"
+            alt=""
+            class="icon-chat helpdesk-icon"
+          />
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <img src="logo2.png" alt="" />
+      <div class="footer-info">
+        <div class="formal-info">
+          <p>Comercial Macêdo & Filhos Ltda</p>
+          <p>CNPJ: 02.724.941/0001-01</p>
+          <p>IE: 194.418.286</p>
+        </div>
+        <div class="address-info">
+          <p>Rua Prof. João Menezes, 607/613, Centro</p>
+          <p>CEP: 64770-000</p>
+          <p>São Raimundo Nonato-PI</p>
+        </div>
+        <div class="contact-info">
+          <p>(89) 3582-1422</p>
+          <p>(89) 98802-3202</p>
+          <p>
+            Email:
+            <a
+              href="mailto:atendimento@shoppingreal.net"
+              style="color: #fff; text-decoration: none"
+              >atendimento@shoppingreal.net</a
+            >
+          </p>
+        </div>
+      </div>
+    </footer>
+    <script src="main.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
